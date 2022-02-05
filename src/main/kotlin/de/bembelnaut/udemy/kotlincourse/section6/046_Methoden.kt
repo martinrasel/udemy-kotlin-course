@@ -1,5 +1,8 @@
 package de.bembelnaut.udemy.kotlincourse.section6
 
+/**
+ * Methoden in Klassen
+ */
 fun main() {
 
     var mMaus: AdvancedMaus = AdvancedMaus()

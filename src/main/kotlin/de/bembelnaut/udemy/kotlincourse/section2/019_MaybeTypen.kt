@@ -1,23 +1,26 @@
 package de.bembelnaut.udemy.kotlincourse.section2
 
+/**
+ * Maybe-Typen können einen null enthalten.
+ */
 fun main() {
 
     // maybe null
     var mString: String? = null
 
-    // führe aus wenn nicht null ist
+    // Es wird keine NullPointerException geworfen, da die Methode lenght nicht ausgeführt wirde
     println(mString?.length)
-    // Ausgabe "null"
+    // Ausgabe ist dann "null"
 
-    // das gleiche wie "?."
+    // Dieser Block entspricht der Prüfung wie oben das "?."
     if (mString != null) {
-        // dann wird der "?." nicht mehr benötigt
+        // Kotlin weiß ab hier, dass mString nicht mehr null sein kann und der "?." wird nicht mehr benötigt
         println(mString.length)
     }
 
-    // compiler warning
+    // Bei dieser Anweisung wird der Compiler ein Warning anzeigen
     // println(mString.length)
 
-    // null pointer!
+    // Mit den "!!" erzwingt man die Ausführung und es kommt zu einer NPE
     // println(mString!!.length)
 }

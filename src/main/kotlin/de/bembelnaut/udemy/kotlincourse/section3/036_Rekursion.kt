@@ -1,5 +1,8 @@
 package de.bembelnaut.udemy.kotlincourse.section3
 
+/**
+ * Übung
+ */
 fun main() {
 
     println( fibonacci(7) )

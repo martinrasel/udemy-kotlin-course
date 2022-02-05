@@ -1,5 +1,8 @@
 package de.bembelnaut.udemy.kotlincourse.section2
 
+/**
+ * Nullable Boolean-Type
+ */
 fun main() {
 
     var mBoolean: Boolean? = null // null, true, false

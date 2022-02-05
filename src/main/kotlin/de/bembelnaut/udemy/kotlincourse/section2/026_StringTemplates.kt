@@ -1,10 +1,15 @@
 package de.bembelnaut.udemy.kotlincourse.section2
 
+/**
+ * String-Templates
+ */
 fun main() {
 
+    // Variablen können in ein String verwurschtelt werden
     var mInt = 32
     println("Int ist gleich $mInt und das ist auch gut so")
 
+    // Es können auch Funktionen mit ${ ... } innerhalb eines Strings ausgeführt werden
     var mString: String? = null
     println("String ist null, daher ${mString?.let { println("OMG!") } ?: "-"} geht das hier" )
 

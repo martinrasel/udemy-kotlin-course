@@ -1,5 +1,8 @@
 package de.bembelnaut.udemy.kotlincourse.section5
 
+/**
+ * Übung
+ */
 fun main() {
 
     val abs = {a: Int -> if (a < 0) a * -1 else a}

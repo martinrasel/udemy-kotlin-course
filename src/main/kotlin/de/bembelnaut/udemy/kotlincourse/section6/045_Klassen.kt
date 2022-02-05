@@ -1,5 +1,8 @@
 package de.bembelnaut.udemy.kotlincourse.section6
 
+/**
+ * Klassen
+ */
 fun main() {
 
     var mMaus: Maus = Maus()
@@ -15,6 +18,7 @@ fun main() {
 }
 
 class Maus {
+    // getter und setter werden automatisch erstellt
     var namen: String = "Micky"
     var velocity: Double = 23.42
 }

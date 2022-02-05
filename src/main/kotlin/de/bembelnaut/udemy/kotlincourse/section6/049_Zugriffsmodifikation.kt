@@ -1,5 +1,8 @@
 package de.bembelnaut.udemy.kotlincourse.section6
 
+/**
+ * Zugriffsmodifikatoren bei Vererbung
+ */
 fun main() {
     // private, protected und public
     var mMaus: ZugriffsMaus = ZugriffsMaus("Daisy", 23.1)
@@ -13,10 +16,10 @@ fun main() {
 
 class ZugriffsMaus(name: String, private val velocity: Double) : Visisbility() {
 
-    // public ist default und muss nicht angegeben werden
+    // public ist der Default und muss nicht angegeben werden
     public var name = name
 
-    // public ist default und muss nicht angegeben werden
+    // public ist der Default und muss nicht angegeben werden
     fun print() {
         showProtectedHello()
         println("Name $name und Velocity $velocity")

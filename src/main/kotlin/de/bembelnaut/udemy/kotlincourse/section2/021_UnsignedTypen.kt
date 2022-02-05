@@ -1,5 +1,8 @@
 package de.bembelnaut.udemy.kotlincourse.section2
 
+/**
+ * Unsinged-Type
+ */
 fun main() {
 
     var mByte: Byte = 12 // -2^4 bis 2^4 -1 (-16 bis 15)
@@ -13,9 +16,7 @@ fun main() {
 
     var mLong: Long = 12 // -2^32 bis 2^32 -1 (-... bis ...)
     var mULong: ULong = 12U // 0 bis 2^64 -1 (0 bis ...)
-
-    // muss nicht sein... annotation
-    @ExperimentalUnsignedTypes
+    
     var mUCalc: UInt = 12U + 12U
     println(mUCalc)
 }

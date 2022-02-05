@@ -1,5 +1,8 @@
 package de.bembelnaut.udemy.kotlincourse.section5
 
+/**
+ * Übung
+ */
 fun main() {
     println(sin(1.0, 100))
 }

@@ -1,5 +1,8 @@
 package de.bembelnaut.udemy.kotlincourse.section2
 
+/**
+ * Übung
+ */
 fun main() {
 
     val row: Int = 7

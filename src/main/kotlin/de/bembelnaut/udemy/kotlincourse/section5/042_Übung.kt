@@ -1,5 +1,8 @@
 package de.bembelnaut.udemy.kotlincourse.section5
 
+/**
+ * Übung
+ */
 fun main() {
 
     val mArray = arrayOf(1,2,4,234,24,52,5)

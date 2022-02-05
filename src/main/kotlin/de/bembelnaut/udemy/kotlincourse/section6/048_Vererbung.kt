@@ -1,5 +1,8 @@
 package de.bembelnaut.udemy.kotlincourse.section6
 
+/**
+ * Vererbung
+ */
 fun main() {
 
     var mMaus: HierachieMaus = HierachieMaus("Daisy", 23.1)
@@ -12,6 +15,7 @@ fun main() {
     mMaus.dieHard()
 }
 
+// HierarchieMaus erbt alle Attribute und Methode von Lebewesen
 class HierachieMaus(var name: String, var velocity: Double) : Lebewesen() {
 
     fun print() {

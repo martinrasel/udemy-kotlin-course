@@ -11,14 +11,16 @@ fun main() {
         maxInt++
     }
 
-    println(maxInt)
-    println(maxInt + 1) // overflow
+    println("Höchster Int-Wert: $maxInt")
+    // Produziert einen Overflow
+    println("Overflow von Int: ${maxInt + 1}")
 
     // suche die kleinste Int Zahl
     while (maxInt > maxInt - 1) {
         maxInt--
     }
 
-    println(maxInt)
-    println(maxInt - 1) // overflow
+    println("Niedrigster Int-Wert: $maxInt")
+    // Produziert einen Overflow
+    println("Overflow von Int: ${maxInt - 1}")
 }

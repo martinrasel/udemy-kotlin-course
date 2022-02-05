@@ -2,13 +2,20 @@ package de.bembelnaut.udemy.kotlincourse.section7
 
 import kotlin.math.*
 
+/**
+ * Sekundärer Konstruktor
+ */
 fun main() {
-    val circle = CircleMeTwice(2.5, "Hohoho")
+
+    val circle = CircleMeTwice2(2.5, "Hohoho")
 
 }
 
-// primärer konstruktor direkt an der klasse
-class CircleMeTwice(radius: Double) {
+// Der primärer Konstruktor steht direkt an der Klasse
+class CircleMeTwice2(radius: Double,
+                    var function: ()->Unit={
+                        println("Primärer Konstruktor")
+                    }) {
 
     // init block wird nach dem constructor ausgeführt
     // er wird in der reihenfloge ausgelesen
@@ -20,6 +27,7 @@ class CircleMeTwice(radius: Double) {
         println("'this.radius (member): nicht init'")
         println("'radius (constructor parameter)' $radius")
         println("'radius (method uses radius member)' ${area()}")
+        function.invoke()
         println("------------------------")
     }
 

@@ -1,16 +1,18 @@
 package de.bembelnaut.udemy.kotlincourse.section2
 
-import de.bembelnaut.udemy.kotlincourse.section1.facultaet
-
+/**
+ * If-Zuweisung (Ternary Conditional Operator)
+ */
 fun main() {
 
     var a = 42
     var b = 1233
 
+    // Ternary Conditional erlaubt eine vorherige Auswertung der Bedingung mit anschließender Zuweisung
     var max = if (a > b) a else b
     println(max)
 
-    // tenerer operator
+    // In einer TC können noch andere Funktionen etc aufgerufen weden
     max = if (a > b) {
         println("Hello a")
         a
@@ -22,6 +24,4 @@ fun main() {
     }
 
     println(max)
-
-
 }
