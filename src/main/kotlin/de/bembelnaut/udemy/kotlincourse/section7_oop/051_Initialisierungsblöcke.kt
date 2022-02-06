@@ -1,6 +1,6 @@
 package de.bembelnaut.udemy.kotlincourse.section7_oop
 
-import kotlin.math.*
+import kotlin.math.PI
 
 /**
  * Initialisierungsblöcke
@@ -12,7 +12,7 @@ fun main() {
 }
 
 // Der primärere Konstruktor wird direkt an der Klasse angegeben.
-class CircleMe(radius: Double) {
+class CircleMe (radius: Double) {
 
     // "init"-Blöcke werden nach dem KonstruKtor ausgeführt
     // Sie werden in der Reihenfloge ausgeführt, von oben nach unten
