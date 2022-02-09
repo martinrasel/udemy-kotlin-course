@@ -1,4 +1,4 @@
-package de.bembelnaut.udemy.kotlincourse.section12_functionale_erweitert
+package de.bembelnaut.udemy.kotlincourse.section12_funktionale_erweitert
 
 /**
  * Lokale Funktion

@@ -13,11 +13,14 @@ repositories {
 }
 
 val exposedVersion = "0.37.3"
+val h2Version = "2.1.210"
 dependencies {
     testImplementation(kotlin("test"))
     implementation("org.jetbrains.exposed:exposed-core:$exposedVersion")
     implementation("org.jetbrains.exposed:exposed-dao:$exposedVersion")
     implementation("org.jetbrains.exposed:exposed-jdbc:$exposedVersion")
+
+    implementation("com.h2database:h2:$h2Version")
 }
 
 tasks.test {
