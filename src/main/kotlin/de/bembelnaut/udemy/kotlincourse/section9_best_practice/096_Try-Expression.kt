@@ -5,6 +5,7 @@ package de.bembelnaut.udemy.kotlincourse.section9_best_practice
  */
 fun main() {
 
+    // Try / Catch kann einen Rückgabewert haben
     println("Wie alt bist Du?")
     var mString: Int? = try {
         readLine()!!.toInt()

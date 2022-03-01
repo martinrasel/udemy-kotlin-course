@@ -11,15 +11,33 @@ fun main() {
 
     val intTransformer = IntTransformer()
     println("IntTransformer ${intTransformer.invoke(3)}")
-    println("IntTransformer ${intTransformer.invoke(5)}")
+    println("IntTransformer ${intTransformer(5)}")
+
+    // SAMs können als Parameter übergeben werden.
+    val myMathUtil = MyMathUtil(5)
+    myMathUtil.printMe(longTransformer)
+    myMathUtil.printMe { it > 4 }
+
+    myMathUtil.printMe(intTransformer)
 }
 
-// SAM-Interface ist ein funktionales Interface (Single Abstract Method)
+class MyMathUtil(var n: Int) {
+
+    fun printMe(longTransformer: LongTransformer) {
+        println("Hello World ${longTransformer.accept(n.toLong())}")
+    }
+
+    fun printMe(intTransformer: IntTransformer) {
+        println("IntTransformer ${intTransformer(n)}")
+    }
+}
+
+// SAM-Interface ist ein funktionales Interface (Single Abstract Method) mit nur einer abstrakten Methode
 fun interface LongTransformer {
   fun accept(l: Long): Boolean
 }
 
-// Oder als Klasse, die ein SAM-Interface implementiert
+// Eine Klasse kann auch eine Lambda Funktion implementieren. Diese muss dann die invoke-Funktion überschreiben.
 class IntTransformer: (Int) -> Int {
     // Die Klasse kann dann auch einen Zustand haben
     var lastValue: Int? = null
